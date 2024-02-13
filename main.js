@@ -90,7 +90,6 @@ function MouseOff() {
 
 let i = 0;
 function Animation() {
-    console.log(document.getElementById('listImg1').clientHeight);
     elem = document.getElementById('listground2');
     if (i%2 === 0) {
         //console.log("1");
