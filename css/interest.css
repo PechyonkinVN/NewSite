@@ -34,7 +34,7 @@ nav {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 1;
+    z-index: 2;
 }
 #logotype {
     font-weight: 700;
@@ -100,17 +100,22 @@ body {
     margin: 4.6vw 0;
     overflow: hidden;
     background-color: black;
+    position: relative;
 }
 #images button {
-    z-index: 10;
+    z-index: 1;
     position: absolute;
-    transform: translateY(11vw);
+    bottom: 40%;
     width: 4vw;
     height: 4vw;
     font-size: 2.5vw;
 }
+#left {
+    border-radius: 0 1vw 1vw 0;
+}
 #right {
-    right: 5vw;
+    right: 0;
+    border-radius: 1vw 0 0 1vw;
 }
 .slide{
     display: none;
@@ -159,9 +164,6 @@ body {
 
 
 
-
-
-
 .container {
     display: flex;
     align-items: center;
@@ -197,7 +199,9 @@ body {
 .timer-title {
     font-size: 3vw;
 }
-
+.timerstatus {
+    display: none;
+}
 
 
 
