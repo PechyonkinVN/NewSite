@@ -46,10 +46,7 @@ function LightTheme() {
     {
         elem.style.color ='rgb(0, 0, 0)';
     }
-    for (let elem of document.getElementsByClassName('itext'))
-    {
-        elem.style.color ='rgb(0, 0, 0)';
-    }
+    document.getElementById('itext').style.color ='rgb(0, 0, 0)';
     document.getElementById('skills').style.backgroundImage = 'linear-gradient(to top right, rgba(77, 207, 70, 0.6), rgba(210, 73, 73, 0.6))';
 }
 function DarkTheme() {
@@ -59,10 +56,7 @@ function DarkTheme() {
     {
         elem.style.color ='rgb(255, 255, 255)';
     }
-    for (let elem of document.getElementsByClassName('itext'))
-    {
-        elem.style.color ='rgb(255, 255, 255)';
-    }
+    document.getElementById('itext').style.color ='rgb(255, 255, 255)';
     document.getElementById('skills').style.backgroundImage = 'linear-gradient(to top right, rgba(77, 207, 70, 0.9), rgba(210, 73, 73, 0.9))';
 }
 
@@ -70,7 +64,7 @@ let videoOn = false;
 let mute = true;
 function Muted() {
     let video = document.getElementById("pootis");
-    video.style.transform = "translateX(-50px)";
+    video.style.transform = "translateX(-4vw)";
     video.play();
     MouseOff();
     videoOn = true;
