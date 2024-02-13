@@ -2,7 +2,7 @@ function checkTheme(page) {
     if (localStorage.getItem('theme_id') === null)
     {
         localStorage.setItem('theme_id', 'light');
-        localStorage.setItem('theme_url', "../Resources/Images/Selestia.png")
+        localStorage.setItem('theme_url', "Resources/Images/Selestia.png")
         console.log("Storage of Theme, hadn't been found. Create new.")
     }
     else
@@ -30,7 +30,7 @@ function changeTheme(img) {
     else
     {
         localStorage.setItem('theme_id', 'light');
-        localStorage.setItem('theme_url', "../Resources/Images/Selestia.png")
+        localStorage.setItem('theme_url', "Resources/Images/Selestia.png")
         img.src = "../Resources/Images/Selestia.png";
         img.id ="light";
     }
