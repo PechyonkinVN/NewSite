@@ -118,7 +118,7 @@ function Send() {
 
 }
 function Clear() {
-    for (let elem of document.getElementsByClassName('itext'))
+    /*for (let elem of document.getElementsByClassName('itext'))
     {
         elem.value = "";
     }
@@ -135,5 +135,5 @@ function Clear() {
             elem.selected = "selected";
         }
     }
-    document.getElementById("text").value = "";
+    document.getElementById("text").value = "";*/
 }
