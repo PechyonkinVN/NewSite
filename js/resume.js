@@ -23,14 +23,14 @@ function changeTheme(img) {
     if (img.id === "light")
     {
         localStorage.setItem('theme_id', 'dark');
-        localStorage.setItem('theme_url', "../Resources/Images/Luna.png")
+        localStorage.setItem('theme_url', "Resources/Images/Luna.png")
         img.src = "../Resources/Images/Luna.png";
         img.id ="dark";
     }
     else
     {
         localStorage.setItem('theme_id', 'light');
-        localStorage.setItem('theme_url', "../Resources/Images/Selestia.png")
+        localStorage.setItem('theme_url', "Resources/Images/Selestia.png")
         img.src = "../Resources/Images/Selestia.png";
         img.id ="light";
     }
