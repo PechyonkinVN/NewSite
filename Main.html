@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Жимолость Intertainment</title>
+        
+        <link rel ="stylesheet" href ="css/animations.css" />
+        <link rel ="stylesheet" href ="mainstyle.css" />
+        <script src="main.js"></script>
+
+        <link rel="icon" href="kawai.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="kawai.ico" type="image/x-icon" />
+    </head>
+    <body id="body">
+        <!-- Шапочка -->
+        <header>
+            <div>
+                <nav>
+                    <div class="logo">
+                        <a href="" id="logotype">Жимолость Entertainment</a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#skills" >Наши возможности</a></li>
+                        <li><a href="Pages/Interests.html" >Наши интересы</a></li>
+                        <li><a href="Pages/Resume.html" >Резюме</a></li>
+                        <li><a href="Pages/Contacts.html" >Контакты</a></li>
+                    </ul>
+                    <img src ="Resources/Images/Selestia.png" class="theme" id="light" onclick="changeTheme(this, '');">
+                </nav>
+            </div>
+        </header>
+        <!-- Тело страницы -->
+        <main>
+            <!-- Шапка -->
+            <section>
+                <div class ="VEGW">
+                    <div class ="bgvideo">
+                        <video id ="bgvideo" autoplay loop muted>
+                            <source src ="Resources/VEGW.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <!-- О себе -->
+            <section class="section">
+                <h1 class ='htext' id="me-htext">О себе</h1>
+                <div id="me-sec">
+                    <div class ='picture'>
+                        <img src ='Resources/Images/okapixi.gif' id ='picture'>
+                    </div>
+                    <div class ="me-cont">
+                        <p>
+                            Тут должен был быть текст, но его тут нет, как и изображения. Живите с этим.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Умения -->
+            <section id="skills">
+                <h1 class ='htext' id ='sk-htext'>Что мы мочь?</h1>
+                <div class ="sk-sec">
+                    <div class ='line1'>
+                        <div class="col1">
+                            <img src ='Resources/Images/sloupok.jpg' id="sloupok">
+                        </div>
+                        <div class="text1">
+                            <p>Мы уметь дышать. Мы уметь есть. Думать мы не уметь.</p>
+                        </div>
+                        <div class="col2" id="dont" onclick="Muted()" onmouseenter="MouseOn()" onmouseleave="MouseOff()">
+                            <video src="Resources/Pootis Status.mp4" poster="Resources/Images/button.png" loop muted id="pootis"></video>
+                        </div>
+                        <div class="text2">
+                            <p>Мы смогли реализовать много замечательных проектов, но только в голове.</p>
+                        </div>
+                        <div class="col3">
+                            <img src="Resources/Images/dich.jpg" id="dich">
+                        </div>
+                        <div class="text3">
+                            <p>Втираем всякую дичь.</p>
+                        </div>
+                    </div>
+                    <div class ='line2'>
+                        <div class="col4">
+                            <img src ='Resources/Images/Rebecca.png' id="rebecca">
+                        </div>
+                        <div class="text4">
+                            <p>Рады видеть всех в нашем сообществе. Wellcome!</p>
+                        </div>
+                        <div class="col5">
+                            <video src="Resources/Monke.mp4" autoplay loop muted id="monke"></video>
+                        </div>
+                        <div class="text5">
+                            <p>Самое дружное, не примитивное комьюнити где-либо, ever.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Списки -->
+            <section id="lists">
+                <div id="listground1">
+                    <img src="Resources/Images/ListGround1.png" class="background" id="listImg1">
+                </div>
+                <div id="listground2">
+                    <img src="Resources/Images/ListGround2.png" class="background" id="listImg2">
+                    <script>
+                        setInterval(Animation, 8000);
+                    </script>
+                </div>
+                <div id="list">
+                    <div id="list1">
+                        <h2>Наши сильные качества</h2>
+                        <ul>
+                            <li>Оптимизм</li>
+                            <li>Коммунизм</li>
+                            <li>Пофигизм</li>
+                            <li>На HTML писанизм</li>
+                        </ul>
+                    </div>
+                    <div id="list2">
+                        <h2>Наши жизненные цели</h2>
+                        <ul>
+                            <li>Съездить в Китай</li>
+                            <li>Повысить социальный рейтинг</li>
+                            <li>Получить кошко-жена и миска риса</li>
+                            <li>Покинуть Китай</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Важная инфа -->
+            <section>
+                <div class="container">
+                    <h1 class="itext">Cамая важная информация</h1>
+                    <div class="about">
+                      <h3 class="itext">
+                        Нажми меня!
+                      </h3>
+                      <button id="info-btn" onclick="Info()">
+                        Сюды!
+                      </button>
+                    </div>
+                </div>
+                <div id="overlay">
+                    <div id="popup" class="popup">
+                        <div class="popup__content">
+                            <video id="NGGYU" src="Resources/NGGYU.mp4" loop></video>
+                        </div>
+                        <div id="btn-container">
+                            <button id="yes-btn" class="popup__button" onclick="Choose()">
+                            Меня зарикроллили...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Остальное -->
+        <footer>
+            <div>
+                <h3>
+                    Все права защищены ассоциацией биполярных пингвинов ©️ 2023
+                </h3>
+            </div>
+            <script>
+                checkTheme(false);
+            </script>
+        </footer>
+    </body>
+</html>

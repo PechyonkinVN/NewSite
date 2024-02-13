@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "SAIBA-45";
+    src: url(../Resources/SAIBA-45.otf);
+}
+@font-face {
+    font-family: "Carbonara";
+    src: url(../Resources/Сarbonara.ttf);
+}
+@font-face {
+    font-family: "Lordcorps";
+    src: url(../Resources/Lordcorps.ttf);
+}
+
+html {
+    overflow-x: hidden;
+}
+.theme {
+    height: 4.5vw;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.5vw;
+    position: fixed;
+    width: 100vw;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+#logotype {
+    font-weight: 700;
+    color: rgb(0, 194, 203);
+    font-size: 2vw;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    height: 40px;
+    margin: auto;
+    padding: 0px 20px;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(29, 96, 242);
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to top, rgb(214, 242, 252), rgb(240, 251, 255));
+    display: inline-block;
+}
+
+#video {
+    overflow: hidden;
+    width: 100vw;
+    height: 25vw; 
+}
+video {
+    width: 100%;
+    transform: translateY(-15vw);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#content {
+    margin: 1vw 0;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    background-image: linear-gradient(to top right, rgba(77, 207, 70, 0.6), rgba(210, 73, 73, 0.6));
+}
+#htext {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    font-family: 'SAIBA-45';
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+table {
+    width: 50vw;
+    border-collapse: collapse; 
+    background-image: linear-gradient(to top right, rgb(70, 116, 207), rgb(208, 210, 73));
+    color: #000000;    
+    margin: auto;
+    text-align: center;
+    font-family: 'Carbonara';
+    overflow: hidden;
+    border-radius: 0.5vw;
+    border: 1vw outset;
+}
+th {
+    font-size: 1.7vw;
+    border: 3px outset #edfaff;
+}
+td {
+    font-size: 1.5vw;
+    border: 1px outset #edfaff;
+}
+
+footer {
+    display: inline-block;
+    width: 100vw;
+    text-align: right;
+    background: #33CCCC;
+    animation: color 9s infinite linear;
+}
+footer div h3 {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0.5vw 4vw;
+    font-size: 1vw;
+}

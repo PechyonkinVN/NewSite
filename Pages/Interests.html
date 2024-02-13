@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Резюме</title>
+        
+        <link rel ="stylesheet" href ="../css/animations.css" />
+
+        <link rel ="stylesheet" href ="../css/interest.css" />
+
+        <link rel="icon" href="../kawai.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../kawai.ico" type="image/x-icon" />
+    </head>
+    <body id="body">
+        <!-- Шапочка -->
+        <header>
+            <div>
+                <nav>
+                    <div class="logo">
+                        <a href="../Main.html" id="logotype">Жимолость Entertainment</a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="../Main.html#skills" >Наши возможности</a></li>
+                        <li><a href="#" >Наши интересы</a></li>
+                        <li><a href="Resume.html" >Резюме</a></li>
+                        <li><a href="Contacts.html" >Контакты</a></li>
+                    </ul>
+                    <img src ="../Resources/Images/Selestia.png" class="theme" id="light" onclick="changeTheme(this, '../')" alt="Theme">
+                </nav>
+            </div>
+        </header>
+        <!-- Тело страницы -->
+        <main>
+            <section id="gallary">
+                <div id="container">
+                    <div id="text">
+                        <h3>Что нам нравится</h3>
+                        <p>
+                            <span>Я </span>
+                            в своем познании настолько преисполнился, что я как будто бы уже
+                            сто триллионов миллиардов лет проживаю на триллионах и
+                            триллионах таких же планет, как эта Земля.
+                        </p>
+                        <p>
+                            <span>М </span>
+                            не этот мир абсолютно
+                            понятен, и я здесь ищу только одного - покоя, умиротворения и
+                            вот этой гармонии, от слияния с бесконечно вечным, от созерцания
+                            великого фрактального подобия и от вот этого замечательного всеединства
+                            существа, бесконечно вечного, куда ни посмотри, хоть вглубь - бесконечно
+                            малое, хоть ввысь - бесконечное большое, понимаешь?
+                        </p>
+                    </div>
+                    <div id="images">
+                        <button id="left" onclick="Left()"><</button>
+                        <button id="right" onclick="Right()">></button>
+                        <img class="slide" id="slide1" src="../Resources/Images/sloupok.jpg">
+                        <img class="slide" id="slide2" src="../Resources/Images/Rebecca.png">
+                        <img class="slide" id="slide3" src="../Resources/Images/dich.jpg">
+                    </div>
+                </div>
+            </section>
+            <section id="tasks">
+                <div id="container">
+                    <div id="text">
+                        <div id="add">
+                            <h3>Новая задача</h3>
+                            <div>
+                                <input id="atext" type="text">
+                                <button id="add" onclick="Add()">Добавить</button>
+                            </div>
+                        </div>
+                        <div id="store">
+                            <h3>Задачи:</h3>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="main">
+                        <div class="timer-option">
+                            <button id="work-button" class="active">Work</button>
+                            <button id="short-button">Short Break</button>
+                            <button id="long-button">Long Break</button>
+                        </div>
+            
+                        <div class="timer-area">
+                            <p id="work-timer"><span></span>:<span></span></p>
+                            <p id="short-timer"><span></span>:<span></span></p>
+                            <p id="long-timer"><span></span>:<span></span></p>
+                        </div>
+            
+                        <div class="timer-title">
+                            <small>Minutes</small>
+                            <small>:</small>
+                            <small>Seconds</small>
+                        </div>
+                    
+                        <div class="timer-settings">
+                            <button id="start-button">Start</button>
+                            <button id="pause-button">Pause</button>
+                            <button id="continue-button">Continue</button>
+                            <button id="reset-button">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Остальное -->
+        <footer>
+            <div>
+                <h3>
+                    Все права защищены ассоциацией биполярных пингвинов ©️ 2023
+                </h3>
+            </div>
+            <script src="../js/interest.js">
+                checkTheme(true);
+            </script>
+        </footer>
+    </body>
+</html>

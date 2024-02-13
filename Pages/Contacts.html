@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Контакты</title>
+        
+        <link rel ="stylesheet" href ="../css/animations.css" />
+        <script src="../js/contact.js"></script>
+
+        <link rel ="stylesheet" href ="../css/contact.css" />
+
+        <link rel="icon" href="../kawai.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../kawai.ico" type="image/x-icon" />
+    </head>
+    <body id="body">
+        <!-- Шапочка -->
+        <header>
+            <div>
+                <nav>
+                    <div class="logo">
+                        <a href="../Main.html" id="logotype">Жимолость Entertainment</a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="../Main.html#skills" >Наши возможности</a></li>
+                        <li><a href="Interests.html" >Наши интересы</a></li>
+                        <li><a href="Resume.html" >Резюме</a></li>
+                        <li><a href="#" >Контакты</a></li>
+                    </ul>
+                    <img src ="../Resources/Images/Selestia.png" class="theme" id="light" onclick="changeTheme(this, '../')" alt="Theme">
+                </nav>
+            </div>
+        </header>
+        <!-- Тело страницы -->
+        <main>
+            <div>
+                <div id="video">
+                    <video src="../Resources/phone.mp4" autoplay loop muted>
+                    </video>
+                </div>
+            </div>
+            <div id="blocks">
+                <div class="block">
+                    <div class="container">
+                        <h2 class="htext">Мы в социальных сетях:</h2>
+                        <div id="pictures">
+                            <a href="https://vk.com/"><img class="picture" src="../Resources/Images/vk.png"></a>
+                            <a href="https://github.com/"><img class="picture" src="../Resources/Images/git.png"></a>
+                            <a href="https://www.youtube.com/"><img class="picture" src="../Resources/Images/youtube.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+                        <h2 class="htext">Наша электронная почта:</h2>
+                        <h3 class="otext">jimolost_int@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+                        <h2 class="htext">Наш номер телефона:</h2>
+                        <h3 class="otext">8 (800) 555-35-35</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="valid">
+                <form>
+                    <h3 id="htext">Форма для связи</h3>
+                    <div id="form" class="borders">
+                        <div id="name" class="info">
+                            <a class="otext">Ваше имя</a>
+                            <input class="itext" type="text" size="20"
+                            placeholder="Иванов Иван Иваныч"></input>
+                        </div>
+                        <div id="date" class="info">
+                            <a class="otext">Назначить встречу</a>
+                            <input class="itext" type="date" size="20"></input>
+                        </div>
+                        <div id="phone" class="info">
+                            <a class="otext">Номер телефона</a>
+                            <input class="itext" type="tel" size="5"
+                            placeholder="+78005553535"></input>
+                        </div>
+                        <div id="email" class="info">
+                            <a class="otext">Эл. почта</a>
+                            <input class="itext" type="email" size="14"
+                            placeholder="jimolost_int@gmail.com"></input>
+                        </div>
+                        <div id="other" class="info">
+                            <a class="otext">Введите ссылку</a>
+                            <input class="itext" type="url" size="15"
+                            placeholder="https://vk.com/..."></input>
+                        </div>
+                    </div>
+                    <radio class="form">
+                        <fieldset class="borders">
+                            <legend class="htext">
+                                Добавить способ ответа:
+                            </legend>
+                            <div>
+                                <div class="otext"><input id="rdate" type="radio" onclick="Choose('date')">Назначить встречу</div>
+                                <div class="otext"><input id="rphone" type="radio" onclick="Choose('phone')" checked="true">Телефон</div>
+                                <div class="otext"><input id="remail" type="radio" onclick="Choose('email')">Электронная почта</div>
+                                <div class="otext"><input id="rother" type="radio" onclick="Choose('other')">Другое</div>
+                                <div class="otext"><input id="rno" type="radio" onclick="Choose('no')">Не надо отвечать</div>
+                            </div>
+                        </fieldset>
+                    </radio>
+                    <div id="select">
+                        <h3 class="htext">Укажите тему</h3>
+                        <select onclick="Ask(this)" class="borders">
+                            <option class="option">Ничего</option>
+                            <option class="option">Работа</option>
+                        </select>
+                    </div>
+                    <check class="form" id="check">
+                        <fieldset class="borders">
+                            <legend class="htext">
+                                Добавить способ ответа:
+                            </legend>
+                            <div>
+                                <div class="otext"><input class="check" type="checkbox">Нужна помощь</div>
+                                <div class="otext"><input class="check" type="checkbox">Сотрудничество</div>
+                                <div class="otext"><input class="check" type="checkbox">Материалы работ</div>
+                                <div class="otext"><input class="check" type="checkbox">Приём на работу</div>
+                            </div>
+                        </fieldset>
+                    </check>
+                    <div id="textarea">
+                        <h3 class="htext">Ваше сообщение:</h3>
+                        <textarea id="text" placeholder="Помогите!!!"></textarea>
+                    </div>
+                    <div id="buttons">
+                        <div><input class="stext" type="submit" name="send" value="Отправить" formaction="../php/test.php" formmethod="post"></div>
+                        <div><input class="stext" type="button" name="clear" value="Очистить" onclick="Clear()"></div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- Остальное -->
+        <footer>
+            <div>
+                <h3>
+                    Все права защищены ассоциацией биполярных пингвинов ©️ 2023
+                </h3>
+            </div>
+            <script>
+                checkTheme(true);
+            </script>
+        </footer>
+    </body>
+</html>
+

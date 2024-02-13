@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "SAIBA-45";
+    src: url(../Resources/SAIBA-45.otf);
+}
+@font-face {
+    font-family: "Carbonara";
+    src: url(../Resources/Сarbonara.ttf);
+}
+@font-face {
+    font-family: "Lordcorps";
+    src: url(../Resources/Lordcorps.ttf);
+}
+
+html {
+    overflow-x: hidden;
+}
+.theme {
+    height: 4.5vw;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.5vw;
+    position: fixed;
+    width: 100vw;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+#logotype {
+    font-weight: 700;
+    color: rgb(0, 194, 203);
+    font-size: 2vw;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    height: 40px;
+    margin: auto;
+    padding: 0px 20px;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(29, 96, 242);
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to top, rgb(214, 242, 252), rgb(240, 251, 255));
+    display: inline-block;
+}
+
+#gallary {
+    width: 100vw;
+    height: 40vw;
+    background-image: url(../Resources/Images/snowtrain.gif);
+    background-size: 100vw auto;
+}
+#gallary #container{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 5.8vw;
+    display: flex;
+    flex-direction: row;
+}
+#text {
+    padding: 0 5vw;
+    width: 45vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+#text h3{
+    font-family: "Carbonara";
+    font-size: 3vw;
+    margin: 0.5vw;
+}
+#gallary #text p{
+    font-size: 1.8vw;
+    margin: 0;
+}
+#gallary #text span{
+    color: rgb(243, 159, 159);
+    font-size: 2.5vw;
+}
+#gallary #images {
+    width: 40vw;
+    height: 25vw;
+    margin: 4.6vw 0;
+    overflow: hidden;
+    background-color: black;
+}
+#images button {
+    z-index: 10;
+    position: absolute;
+    transform: translateY(11vw);
+    width: 4vw;
+    height: 4vw;
+    font-size: 2.5vw;
+}
+#right {
+    right: 5vw;
+}
+.slide{
+    display: none;
+}
+#slide1 {
+    display: block;
+    height: 100%;
+    transform: translateX(1.5%);
+}
+#slide2 {
+    height: 100%;
+    transform: translateX(25%);
+}
+#slide3 {
+    height: 100%;
+}
+#text button {
+    height: 3.2vw;
+    font-size: 2vw;
+}
+#text p {
+    font-size: 3vw;
+}
+#atext {
+    font-size: 2vw;
+    height: 2.6vw;
+}
+
+#tasks {
+    width: 100vw;
+    height: 55vw;
+    background-image: url(../Resources/Images/shop.gif);
+    background-size: 100vw auto;
+}
+#tasks #container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    padding: 0 5vw;
+}
+#store {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.main {
+    border: 2px solid;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    background-color: rgb(230, 230, 230);
+}
+.main button {
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    width: 20vw;
+}
+.active {
+    color: rgb(240, 240, 240);
+    background-color: rgb(120, 120, 120);
+    border: none;
+}
+.timer-area {
+    font-size: 5vw;
+    margin-top: 1vw;
+}
+#work-timer {
+    margin: 1vw 0;
+}
+.timer-title {
+    font-size: 3vw;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    display: inline-block;
+    width: 100vw;
+    text-align: right;
+    background: #33CCCC;
+    animation: color 9s infinite linear;
+}
+footer div h3 {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0.5vw 4vw;
+    font-size: 1vw;
+}

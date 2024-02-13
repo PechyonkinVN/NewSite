@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Резюме</title>
+        
+        <link rel ="stylesheet" href ="../css/animations.css" />
+        <script src="../js/resume.js"></script>
+
+        <link rel ="stylesheet" href ="../css/resume.css" />
+
+        <link rel="icon" href="../kawai.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../kawai.ico" type="image/x-icon" />
+    </head>
+    <body id="body">
+        <!-- Шапочка -->
+        <header>
+            <div>
+                <nav>
+                    <div class="logo">
+                        <a href="../Main.html" id="logotype">Жимолость Entertainment</a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="../Main.html#skills" >Наши возможности</a></li>
+                        <li><a href="Interests.html" >Наши интересы</a></li>
+                        <li><a href="#" >Резюме</a></li>
+                        <li><a href="Contacts.html" >Контакты</a></li>
+                    </ul>
+                    <img src ="../Resources/Images/Selestia.png" class="theme" id="light" onclick="changeTheme(this, '../')" alt="Theme">
+                </nav>
+            </div>
+        </header>
+        <!-- Тело страницы -->
+        <main>
+            <div id="video">
+                <video src="../Resources/September1.mp4" autoplay loop muted>
+                </video>
+            </div>
+            <div id="content">
+                <h1 id ='htext'>Состав</h1>
+                <div>
+                    <table> 
+                        <tr>
+                            <th>Представители</th>
+                            <th>Место работы (Учёбы)</th>
+                            <th>Должность</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Печенкин Владислав</th>
+                            <td rowspan="3">Университет "Дубна"</td>
+                            <td>Сценарист</td>
+                            <tr>
+                                <td>Режисёр</td>
+                            </tr>
+                            <tr>
+                                <td>Аниматор</td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Бухарин Алексей</th>
+                            <td rowspan="2">Университет "Дубна"</td>
+                            <td>Аниматор</td>
+                            <tr>
+                                <td>Актёр</td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Замятин Валерий</th>
+                            <td rowspan="2">Университет "Дубна"</td>
+                            <td>Звукорежисёр</td>
+                            <tr>
+                                <td>Актёр</td>
+                            </tr>
+                        <tr>
+                            <th rowspan="2">Тарасов Артур</th>
+                            <td rowspan="2">Университет "Дубна"</td>
+                            <td>Звукорежисёр</td>
+                            <tr>
+                                <td>Актёр</td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <!-- Остальное -->
+        <footer>
+            <div>
+                <h3>
+                    Все права защищены ассоциацией биполярных пингвинов ©️ 2023
+                </h3>
+            </div>
+            <script>
+                checkTheme(true);
+            </script>
+        </footer>
+    </body>
+</html>
