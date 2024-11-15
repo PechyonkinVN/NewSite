@@ -47,7 +47,7 @@ nav ul {
 nav ul li a {
     height: 40px;
     margin: auto;
-    padding: 0px 20px;
+    padding: 0px 1vw;
     display: inline-flex;
     align-items: center;
     color: rgb(29, 96, 242);
@@ -97,9 +97,9 @@ body {
 }
 #me-sec {
     display: grid;
-    grid-template-columns: 20vw 3vw auto;
+    grid-template-columns: 35vw 3vw auto;
     height: 33vw;
-    width: 65vw;
+    width: 75vw;
     margin-left: 7vw;
     padding: 1.5vw;
     border-radius: 1vw;
@@ -140,18 +140,30 @@ body {
 .line1 {
     grid-row: 1;
     display: grid;
-    grid-template-columns: auto 14vw 4vw 14vw 4vw 14vw auto;
+    grid-template-columns: auto 14vw 4vw 14vw 4vw 14vw 4vw 14vw auto;
     grid-template-rows: 14vw auto;
     
 }
 .line2 {
     grid-row: 3;
     display: grid;
-    grid-template-columns: auto 14vw 4vw 14vw auto;
+    grid-template-columns: auto 14vw 4vw 14vw 4vw 14vw auto;
     grid-template-rows: 14vw auto;
     
 }
+.line3 {
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: auto 14vw 4vw 14vw 4vw 14vw 4vw 14vw auto;
+    grid-template-rows: 14vw auto;
+}
 .line1 div p {
+    font-family: 'Carbonara';
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: center;
+}
+.line3 div p {
     font-family: 'Carbonara';
     font-size: 1.2vw;
     font-weight: bold;
@@ -166,6 +178,34 @@ body {
 #sloupok {
     height: 100%;
     transform: translateX(-3.5vw);
+}
+#danila {
+    width: 100%;
+}
+#dasha {
+    width: 100%;
+}
+#dima {
+    height: 100%;
+    transform: translateX(-3.5vw);
+}
+#grisha {
+    width: 100%;
+}
+#dimon {
+    width: 100%;
+}
+#liza {
+    height: 100%;
+}
+#max {
+    height: 100%;
+}
+#pasha {
+    height: 100%;
+}
+#tanya {
+    height: 100%;
 }
 .text1 {
     grid-column: 2;
@@ -192,6 +232,16 @@ body {
     grid-row: 1;
     overflow: hidden;
     border-radius: 1vw;
+}
+.col6 {
+    grid-column: 8;
+    grid-row: 1;
+    overflow: hidden;
+    border-radius: 1vw;
+}
+.text6 {
+    grid-column: 8;
+    grid-row: 2;
 }
 #dich {
     height: 100%;
